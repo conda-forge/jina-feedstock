@@ -37,12 +37,12 @@ outputs:
       run:
         - __unix
         - python >=3.7
-        - tornado >=5.1.0
-        - protobuf >=3.13.0
         - grpcio >=1.33.1
-        - pyzmq >=17.1.0
         - numpy
+        - protobuf >=3.13.0
         - pyyaml >=5.3.1
+        - pyzmq >=17.1.0
+        - tornado >=5.1.0
   - name: jina-perf
     test:
       requires:
@@ -67,14 +67,14 @@ outputs:
       run:
         - __unix
         - python >=3.7
-        - numpy
-        - pyyaml >=5.3.1
-        - tornado >=5.1.0
-        - protobuf >=3.13.0
         - grpcio >=1.33.1
-        - uvloop
-        - pyzmq >=17.1.0
         - lz4 <3.1.2
+        - numpy
+        - protobuf >=3.13.0
+        - pyyaml >=5.3.1
+        - pyzmq >=17.1.0
+        - tornado >=5.1.0
+        - uvloop
   - name: jina
     test:
       requires:
@@ -97,28 +97,29 @@ outputs:
       run:
         - __unix
         - python >=3.7
-        - tornado >=5.1.0
-        - fastapi
-        - protobuf >=3.13.0
-        - cryptography
-        - grpcio >=1.33.1
-        - docker-py
-        - rich
-        - numpy
-        - pyyaml >=5.3.1
-        - uvloop
-        - pathspec
-        - aiostream
-        - aiohttp
-        - filelock
-        - websockets
-        - requests
-        - uvicorn >=0.14.0
-        - pyzmq >=17.1.0
         - aiofiles
-        - python-multipart
-        - pydantic
+        - aiohttp
+        - aiostream
+        - cryptography
+        - docker-py
+        - fastapi
+        - filelock
+        - grpcio >=1.33.1
+        - kubernetes >=18.20.0
         - lz4 <3.1.2
+        - numpy
+        - pathspec
+        - protobuf >=3.13.0
+        - pydantic
+        - python-multipart
+        - pyyaml >=5.3.1
+        - pyzmq >=17.1.0
+        - requests
+        - rich
+        - tornado >=5.1.0
+        - uvicorn >=0.14.0
+        - uvloop
+        - websockets
 
 about:
   home: https://github.com/jina-ai/jina/
