@@ -105,7 +105,7 @@ outputs:
         - fastapi
         - filelock
         - grpcio >=1.33.1
-        - kubernetes >=18.20.0
+        - python-kubernetes >=18.20.0
         - lz4 <3.1.2
         - numpy
         - pathspec
