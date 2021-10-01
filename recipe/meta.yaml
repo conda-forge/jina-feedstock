@@ -132,7 +132,6 @@ about:
 extra:
   recipe-maintainers:
     - tadejsv
-    - maateen
     - nan-wang
     - hanxiao
   feedstock-name: jina
