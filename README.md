@@ -120,7 +120,6 @@ Feedstock Maintainers
 =====================
 
 * [@hanxiao](https://github.com/hanxiao/)
-* [@maateen](https://github.com/maateen/)
 * [@nan-wang](https://github.com/nan-wang/)
 * [@tadejsv](https://github.com/tadejsv/)
 
