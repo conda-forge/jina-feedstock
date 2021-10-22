@@ -1,5 +1,5 @@
 {% set name = "jina" %}
-{% set version = "2.1.5" %}
+{% set version = "2.1.10" %}
 
 package:
   name: {{ name|lower }}-split
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3894ecbf06250ffd7e5c8dc17a636321f3f3b178281c946892826af1adaf96f2
+  sha256: 935811c9858a89612a4a465638cbb7ed9b3df3cdcc99409a31aa43f7c1f1327c
 
 build:
   number: 0
@@ -105,7 +105,7 @@ outputs:
         - fastapi
         - filelock
         - grpcio >=1.33.1
-        - python-kubernetes >=18.20.0
+        - kubernetes >=18.20.0
         - lz4 <3.1.2
         - numpy
         - pathspec
