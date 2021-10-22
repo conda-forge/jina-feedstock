@@ -71,6 +71,7 @@ outputs:
         - lz4 <3.1.2
         - numpy
         - protobuf >=3.13.0
+        - python-kubernetes >=18.20.0
         - pyyaml >=5.3.1
         - pyzmq >=17.1.0
         - tornado >=5.1.0
@@ -102,7 +103,7 @@ outputs:
         - aiostream
         - cryptography
         - docker-py
-        - fastapi
+        - fastapi <=0.68.2
         - filelock
         - grpcio >=1.33.1
         - lz4 <3.1.2
