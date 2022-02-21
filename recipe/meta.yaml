@@ -1,5 +1,5 @@
 {% set name = "jina" %}
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 package:
   name: {{ name|lower }}-split
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d8c033d34f31a7086385242087fd8d1d567699eddad67f401ef8b216c9636cff
+  sha256: e2f0dd6004b5a0042fd86879caebbe24c68adbb650a11855e5ee0bceef394684
 
 build:
   number: 0
@@ -40,6 +40,7 @@ outputs:
         - docarray >=0.6.3
         - grpcio >=1.33.1
         - numpy
+        - packaging >=20.0
         - protobuf >=3.19.1
         - pyyaml >=5.3.1
   - name: jina-perf
@@ -70,6 +71,7 @@ outputs:
         - grpcio >=1.33.1
         - lz4 <3.1.2
         - numpy
+        - packaging >=20.0
         - protobuf >=3.19.1
         - python-kubernetes >=18.20.0
         - pyyaml >=5.3.1
@@ -107,6 +109,7 @@ outputs:
         - grpcio >=1.33.1
         - lz4 <3.1.2
         - numpy
+        - packaging >=20.0
         - pathspec
         - protobuf >=3.19.1
         - pydantic
