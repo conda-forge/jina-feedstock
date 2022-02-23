@@ -40,6 +40,7 @@ outputs:
         - docarray >=0.6.3
         - grpcio >=1.33.1
         - numpy
+        - packaging >=20.0
         - protobuf >=3.19.1
         - pyyaml >=5.3.1
   - name: jina-perf
@@ -70,6 +71,7 @@ outputs:
         - grpcio >=1.33.1
         - lz4 <3.1.2
         - numpy
+        - packaging >=20.0
         - protobuf >=3.19.1
         - python-kubernetes >=18.20.0
         - pyyaml >=5.3.1
@@ -107,6 +109,7 @@ outputs:
         - grpcio >=1.33.1
         - lz4 <3.1.2
         - numpy
+        - packaging >=20.0
         - pathspec
         - protobuf >=3.19.1
         - pydantic
