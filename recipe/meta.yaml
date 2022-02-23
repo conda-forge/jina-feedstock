@@ -37,7 +37,7 @@ outputs:
       run:
         - __unix
         - python >=3.7
-        - docarray >=0.6.3
+        - docarray >=0.7.0
         - grpcio >=1.33.1
         - numpy
         - packaging >=20.0
@@ -102,7 +102,7 @@ outputs:
         - aiohttp
         - aiostream
         - cryptography
-        - docarray >=0.6.3
+        - docarray >=0.7.0
         - docker-py
         - fastapi
         - filelock
