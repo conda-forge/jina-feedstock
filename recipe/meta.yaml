@@ -1,5 +1,5 @@
 {% set name = "jina" %}
-{% set version = "3.0.3" %}
+{% set version = "3.0.4" %}
 
 package:
   name: {{ name|lower }}-split
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b6932aac7b467b57da49c9c1ea67319df152b1aab4a2ee3c7838b2d4f1cae749
+  sha256: 85cffdaa82bffe14408e78744c7663bd12f23194c34908aaff78d44bc1f51326
 
 build:
   number: 0
