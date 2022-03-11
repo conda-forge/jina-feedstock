@@ -1,5 +1,5 @@
 {% set name = "jina" %}
-{% set version = "3.1.1" %}
+{% set version = "3.1.2" %}
 
 package:
   name: {{ name|lower }}-split
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4e73c74b49d800bb3b2b97beddfd72d627e404d1f2d5be49ef2c45d6e476f237
+  sha256: 51e12169847c001ffaf872e71108cf6b853709866ce0d244ce7eb36ca9991a0f
 
 build:
   number: 0
@@ -118,7 +118,6 @@ outputs:
         - pyyaml >=5.3.1
         - requests
         - rich
-        - strawberry-graphql >=0.96.0
         - uvicorn
         - uvloop
         - websockets
