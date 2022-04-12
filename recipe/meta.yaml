@@ -110,7 +110,7 @@ outputs:
         - numpy
         - packaging >=20.0
         - pathspec
-        - prometheus-client
+        - prometheus_client
         - protobuf >=3.19.1
         - pydantic
         - python-multipart
