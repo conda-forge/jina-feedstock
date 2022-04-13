@@ -150,5 +150,4 @@ Feedstock Maintainers
 * [@JoanFM](https://github.com/JoanFM/)
 * [@hanxiao](https://github.com/hanxiao/)
 * [@nan-wang](https://github.com/nan-wang/)
-* [@tadejsv](https://github.com/tadejsv/)
 
