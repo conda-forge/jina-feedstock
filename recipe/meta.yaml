@@ -1,5 +1,5 @@
 {% set name = "jina" %}
-{% set version = "3.3.6" %}
+{% set version = "3.3.19" %}
 
 package:
   name: {{ name|lower }}-split
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 72c42e185a3668dd4593eecb3ca3e3f81a506f79b6686acd02e0feb5fd8c0eb1
+  sha256: ed9c7c22bc9a82b3a21bac741f143dca5b1e91ef01ff1c7157e29d5a3d6378dd
 
 build:
   number: 0
@@ -37,10 +37,11 @@ outputs:
         - __unix
         - python >=3.7
         - docarray >=0.9.10
-        - grpcio >=1.33.1
-        - grpcio-reflection >=1.33.1
+        - grpcio >=1.33.1,<1.44.0
+        - grpcio-reflection >=1.33.1,<1.44.0
         - numpy
         - packaging >=20.0
+        - prometheus_client
         - protobuf >=3.19.1
         - pyyaml >=5.3.1
   - name: jina-perf
@@ -67,11 +68,12 @@ outputs:
         - __unix
         - python >=3.7
         - docarray >=0.9.10
-        - grpcio >=1.33.1
-        - grpcio-reflection >=1.33.1
+        - grpcio >=1.33.1,<1.44.0
+        - grpcio-reflection >=1.33.1,<1.44.0
         - lz4 <3.1.2
         - numpy
         - packaging >=20.0
+        - prometheus_client
         - protobuf >=3.19.1
         - pyyaml >=5.3.1
         - uvloop
@@ -104,8 +106,8 @@ outputs:
         - docker-py
         - fastapi
         - filelock
-        - grpcio >=1.33.1
-        - grpcio-reflection >=1.33.1
+        - grpcio >=1.33.1,<1.44.0
+        - grpcio-reflection >=1.33.1,<1.44.0
         - lz4 <3.1.2
         - numpy
         - packaging >=20.0
