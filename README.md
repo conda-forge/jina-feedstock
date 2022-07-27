@@ -7,7 +7,7 @@ Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jina-feedstock/blob/main/LICENSE.txt)
 
-Summary: Jina is the cloud-native neural search framework for any kind of data
+Summary: Build cross-modal and multi-modal applications on the cloud
 
 Documentation: https://docs.jina.ai
 
