@@ -7,7 +7,6 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 49a7fec74b3b0927143d73ce787c7e3fe5e52fa2a1079323248a20590d2bf49f
 
 build:
   number: 0
@@ -17,7 +16,7 @@ outputs:
     build:
       noarch: python
       entry_points:
-        - jina = cli:main
+        - jina = jina_cli:main
       script: python -m pip install . --no-deps -vv
       script_env:
         - JINA_PIP_INSTALL_CORE=1
@@ -60,7 +59,7 @@ outputs:
     build:
       noarch: python
       entry_points:
-        - jina = cli:main
+        - jina = jina_cli:main
       script: python -m pip install . --no-deps -vv
       script_env:
         - JINA_PIP_INSTALL_PERF=1
@@ -104,7 +103,7 @@ outputs:
     build:
       noarch: python
       entry_points:
-        - jina = cli:main
+        - jina = jina_cli:main
       script: python -m pip install . --no-deps -vv
     requirements:
       host:
@@ -117,7 +116,6 @@ outputs:
         - aiohttp
         - aiostream
         - cryptography
-        - docarray >=0.16.3
         - docarray >=0.16.4
         - docker-py
         - fastapi >=0.76.0
