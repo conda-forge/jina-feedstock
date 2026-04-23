@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 1391696dac862399005b5aca8cafa529dc8bebbb3b4e318d7acbf18c4ff695b3
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: jina-core
@@ -24,6 +24,7 @@ outputs:
     test:
       requires:
         - pip
+        - python {{ python_min }}
       imports:
         - jina
       commands:
@@ -31,11 +32,11 @@ outputs:
         - jina --version
     requirements:
       host:
-        - python >=3.7
+        - python {{ python_min }}
         - pip
       run:
         - __unix
-        - python >=3.7
+        - python >={{ python_min }}
         - docarray >=0.13.14
         - grpcio >=1.46.0
         - grpcio-health-checking >=1.46.0
@@ -48,6 +49,7 @@ outputs:
     test:
       requires:
         - pip
+        - python {{ python_min }}
       imports:
         - jina
       commands:
@@ -62,11 +64,11 @@ outputs:
         - JINA_PIP_INSTALL_PERF=1
     requirements:
       host:
-        - python >=3.7
+        - python {{ python_min }}
         - pip
       run:
         - __unix
-        - python >=3.7
+        - python >={{ python_min }}
         - docarray >=0.13.14
         - grpcio >=1.46.0
         - grpcio-health-checking >=1.46.0
@@ -81,6 +83,7 @@ outputs:
     test:
       requires:
         - pip
+        - python {{ python_min }}
       imports:
         - jina
       commands:
@@ -93,11 +96,11 @@ outputs:
       script: python -m pip install . --no-deps -vv
     requirements:
       host:
-        - python >=3.7
+        - python {{ python_min }}
         - pip
       run:
         - __unix
-        - python >=3.7
+        - python >={{ python_min }}
         - aiofiles
         - aiohttp
         - aiostream
